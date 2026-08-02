@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hotel Garuda - Feedback</title>
+<link rel="stylesheet" href="stylesfeed.css" />
+</head>
+<body>
+<header class="site-header">
+<nav class="nav">
+<div class="brand">Hotel Garuda</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="signin.html">Sign In</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="feedback-container">
+<h2>We value your feedback</h2>
+<form id="feedback-form" autocomplete="off" onsubmit="handleFeedback(event)">
+<label>
+Name
+<input type="text" id="name" placeholder="Your name" required />
+</label>
+<label>
+Email
+<input type="email" id="femail" placeholder="you@example.com" required />
+</label>
+<label>
+Rating
+<select id="rating" required>
+<option value="" disabled selected>Choose</option>
+<option value="5">5 - Excellent</option>
+<option value="4">4 - Great</option>
+<option value="3">3 - Good</option>
+<option value="2">2 - Fair</option>
+<option value="1">1 - Poor</option>
+</select>
+</label>
+<label>
+Message
+<textarea id="message" rows="5" placeholder="Your experience..." required></textarea>
+</label>
+<button type="submit" class="cta">Submit Feedback</button>
+</form>
+<div id="feedback-response" class="response" aria-live="polite"></div>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</feedback.html> <!-- ensure filename is feedback.html -->
